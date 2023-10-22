@@ -1,0 +1,297 @@
+import React from 'react';
+import Footer from './Footer'
+import CustomerNavbar from './CustomerNavbar'
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBRipple,
+} from 'mdb-react-ui-kit';
+
+export default function Header() {
+  return (
+    <div>
+      <CustomerNavbar/>
+<MDBCarousel showControls interval={1500}>
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={1}
+        src='https://mdbootstrap.com/img/new/slides/041.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={2}
+        src='https://mdbootstrap.com/img/new/slides/042.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={3}
+        src='https://mdbootstrap.com/img/new/slides/043.jpg'
+        alt='...'
+      />
+    </MDBCarousel>
+
+    <MDBContainer fluid className="my-5 text-center">
+      <h4 className="mt-4 mb-5">
+        <strong>Bestsellers</strong>
+      </h4>
+
+    <MDBRow>
+        <MDBCol md="4" lg="3" className="mb-4">
+          <MDBCard>
+            <MDBRipple
+              rippleColor="light"
+              rippleTag="div"
+              className="bg-image rounded hover-zoom"
+            >
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+                fluid
+                className="w-100"
+              />
+              <a href="#!">
+                <div className="mask">
+                  <div className="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span className="badge bg-primary ms-2">New</span>
+                    </h5>
+                  </div>
+                </div>
+                <div className="hover-overlay">
+                  <div
+                    className="mask"
+                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                  ></div>
+                </div>
+              </a>
+            </MDBRipple>
+            <MDBCardBody>
+              <a href="#!" className="text-reset">
+                <h5 className="card-title mb-3">Product name</h5>
+              </a>
+              <a href="#!" className="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 className="mb-3">$61.99</h6>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+        <MDBCol md="4" lg="3" className="mb-4">
+          <MDBCard>
+            <MDBRipple
+              rippleColor="light"
+              rippleTag="div"
+              className="bg-image rounded hover-zoom"
+            >
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                fluid
+                className="w-100"
+              />
+              <a href="#!">
+                <div className="mask">
+                  <div className="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span className="badge bg-success ms-2">Eco</span>
+                    </h5>
+                  </div>
+                </div>
+                <div className="hover-overlay">
+                  <div
+                    className="mask"
+                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                  ></div>
+                </div>
+              </a>
+            </MDBRipple>
+            <MDBCardBody>
+              <a href="#!" className="text-reset">
+                <h5 className="card-title mb-3">Product name</h5>
+              </a>
+              <a href="#!" className="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 className="mb-3">$61.99</h6>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+        <MDBCol md="4" lg="3" className="mb-4">
+          <MDBCard>
+            <MDBRipple
+              rippleColor="light"
+              rippleTag="div"
+              className="bg-image rounded hover-zoom"
+            >
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
+                fluid
+                className="w-100"
+              />
+              <a href="#!">
+                <div className="mask">
+                  <div className="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span className="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    className="mask"
+                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                  ></div>
+                </div>
+              </a>
+            </MDBRipple>
+            <MDBCardBody>
+              <a href="#!" className="text-reset">
+                <h5 className="card-title mb-3">Product name</h5>
+              </a>
+              <a href="#!" className="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 className="mb-3">
+                <s>$61.99</s>
+                <strong className="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+        <MDBCol md="4" lg="3" className="mb-4">
+          <MDBCard>
+            <MDBRipple
+              rippleColor="light"
+              rippleTag="div"
+              className="bg-image rounded hover-zoom"
+            >
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
+                fluid
+                className="w-100"
+              />
+              <a href="#!">
+                <div className="mask">
+                  <div className="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span className="badge bg-success ms-2">Eco</span>
+                      <span className="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div className="hover-overlay">
+                  <div
+                    className="mask"
+                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                  ></div>
+                </div>
+              </a>
+            </MDBRipple>
+            <MDBCardBody>
+              <a href="#!" className="text-reset">
+                <h5 className="card-title mb-3">Product name</h5>
+              </a>
+              <a href="#!" className="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 className="mb-3">
+                <s>$61.99</s>
+                <strong className="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+        <MDBCol md="4" lg="3" className="mb-4">
+          <MDBCard>
+            <MDBRipple
+              rippleColor="light"
+              rippleTag="div"
+              className="bg-image rounded hover-zoom"
+            >
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
+                fluid
+                className="w-100"
+              />
+              <a href="#!">
+                <div className="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100"></div>
+                </div>
+                <div className="hover-overlay">
+                  <div
+                    className="mask"
+                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                  ></div>
+                </div>
+              </a>
+            </MDBRipple>
+            <MDBCardBody>
+              <a href="#!" className="text-reset">
+                <h5 className="card-title mb-3">Product name</h5>
+              </a>
+              <a href="#!" className="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 className="mb-3">$61.99</h6>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+        <MDBCol md="4" lg="3" className="mb-4">
+          <MDBCard>
+            <MDBRipple
+              rippleColor="light"
+              rippleTag="div"
+              className="bg-image rounded hover-zoom"
+            >
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
+                fluid
+                className="w-100"
+              />
+              <a href="#!">
+                <div className="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span className="badge bg-primary ms-2">New</span>
+                      <span className="badge bg-success ms-2">Eco</span>
+                      <span className="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div className="hover-overlay">
+                  <div
+                    className="mask"
+                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                  ></div>
+                </div>
+              </a>
+            </MDBRipple>
+            <MDBCardBody>
+              <a href="#!" className="text-reset">
+                <h5 className="card-title mb-3">Product name</h5>
+              </a>
+              <a href="#!" className="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 className="mb-3">
+                <s>$61.99</s>
+                <strong className="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
+</MDBContainer>
+
+
+    <Footer/>
+    </div>
+    
+  );
+}

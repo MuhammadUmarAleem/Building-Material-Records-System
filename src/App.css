@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Register Page */
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+/* Login Page */
+.login{
+  height: 100vh;
+}
+.register{
+  height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+  .login{
+    height: 120vh;
+  }
+  .register{
+    height: 120vh;
+  }
+}
+
+/* Manga cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  margin-top:"30px";
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top:"-30px";
+  }
+}
+
+/* Single manga page */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex-basis: 30%;
+  padding: 10px;
+}
+
+.left-column img {
+  width: 100%;
+  height: auto;
+}
+
+.left-column button {
+  display: block;
+  margin-top: 10px;
+}
+
+.right-column {
+  flex-basis: 70%;
+  padding: 10px;
+}
+
+.right-column h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.singlecard{
+  width: "200px";
+  background-color: "	#282828";
+}
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .column-left,
+  .column-right {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  embed {
+      width: 100%;
+      height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  embed {
+      width: 90%;
+      height: 800px;
+  }
+}
+
+/* mangalist */
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
+  /* About us */
+  .blur-background {
+    background-image: url('../public/Assets/aboutus.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .about-us-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+
+  body {
+    background-color: hsl(0, 0%, 96%);
+  }
+
+
+  footer {
+    background-color: #007bff;
+    color: #fff;
+    padding-top: 30px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .white-link {
+    color: white;
+  }
